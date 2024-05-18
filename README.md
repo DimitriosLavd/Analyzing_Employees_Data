@@ -338,4 +338,8 @@ Our initial dataset contains information about 311 employees. You can see our in
 |Zhou, Julia              |10043|0        |0              |0       |1          |3     |3          |0                     |89292 |0    |9         |Data Analyst                |MA   |2148 |F  |Single     |US Citizen         |No            |White                           |N/A-StillEmployed               |Active                |IT/IS               |Simon Roup        |4        |Employee Referral      |Fully Meets      |5               |3              |5                   |0             |11      |
 |Zima, Colleen            |10271|0        |4              |0       |1          |5     |3          |0                     |45046 |0    |19        |Production Technician I     |MA   |1730 |F  |Widowed    |US Citizen         |No            |Asian                           |N/A-StillEmployed               |Active                |Production          |David Stanley     |14       |LinkedIn               |Fully Meets      |4.5             |5              |0                   |0             |2       |
 
+We want to focus our analysis on a specific dataset, that contains information about employees with the following criteria:
 
+1. We seek employees whose salary is above the median salary of all employees in the dataset.
+2. We focus on employees who have a satisfaction level of 3 or higher. It's essential to consider only those who express moderate to high job satisfaction.
+3. Employees under consideration should either meet or exceed their performance expectations. This translates to having a performance score labeled as 'Exceeds' or 'Fully Meets'.
