@@ -9,7 +9,7 @@ A small data analysis project, focused on analyzing employee data. This project 
 - [Tools](#tools)
 - [Task 1 and 2 - Creating and extracting the specific dataset](#task-1-and-2---creating-and-extracting-the-specific-dataset)
 - [Task 3 - Analyzing Salary Data](#task-3---analyzing-salary-data)
-- [Task 4 - Visual Analysis of Salary](#task 4---visual-analysis-of-salary)
+- [Task 4 - Visual Analysis of Salary](#task-4---visual-analysis-of-salary)
 - [Task 5 - Visually representing Salary VS Employee Satisfaction](#task-5---visually-representing-salary-vs-employee-satisfaction)
 - [Task 6 - Pie Chart Representation of Race Distribution](#task-6---pie-chart-representation-of-race-distribution)
 
