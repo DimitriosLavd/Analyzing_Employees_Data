@@ -609,7 +609,7 @@ race_dist['percentage'] = (race_dist['count']/109)*100
 race_dist = race_dist.sort_values('percentage')
 ```
 
-We used the race_dist DataFrame in the following code in order to create the Pie Chart we wanted:
+We used the race_dist DataFrame in the following code, in order to create the Pie Chart we wanted:
 
 ```python
 # Creating plot
