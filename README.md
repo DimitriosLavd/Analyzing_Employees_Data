@@ -343,3 +343,61 @@ We want to focus our analysis on a specific dataset, that contains information a
 1. We seek employees whose salary is above the median salary of all employees in the dataset.
 2. We focus on employees who have a satisfaction level of 3 or higher. It's essential to consider only those who express moderate to high job satisfaction.
 3. Employees under consideration should either meet or exceed their performance expectations. This translates to having a performance score labeled as 'Exceeds' or 'Fully Meets'.
+
+Firstly, we choose only the employees whose salary is above the median salary of all employees in the dataset. We did that using the following SQL query.
+The initial data was stores as 'employee_data.information:
+
+```SQL
+SELECT * 
+FROM ( SELECT *
+FROM `employee_data.information`
+ORDER BY Salary DESC)
+LIMIT 155
+```
+As a second step, we used the following query to further filter our dataset. With this step, we choose the employees with the desired satisfaction level:
+
+```SQL
+SELECT *
+FROM (SELECT * 
+FROM ( SELECT *
+FROM `employee_data.information`
+ORDER BY Salary DESC)
+LIMIT 155
+)
+WHERE EmpSatisfaction >= 3
+```
+
+Then, we choose the employees with the desired performance level:
+
+```SQL
+SELECT * 
+FROM (SELECT *
+FROM (SELECT * 
+FROM ( SELECT *
+FROM `employee_data.information`
+ORDER BY Salary DESC)
+LIMIT 155
+)
+WHERE EmpSatisfaction >= 3)
+WHERE PerformanceScore = 'Exceeds' OR PerformanceScore = 'Fully Meets'
+```
+
+As a final step, we choose the employees who work at the 'production' and the 'IT/IS' department. Below, you can see the query that produces the final dataset we will use for our analysis:
+
+```SQL
+SELECT *
+FROM (SELECT * 
+FROM (SELECT *
+FROM (SELECT * 
+FROM ( SELECT *
+FROM `employee_data.information`
+ORDER BY Salary DESC)
+LIMIT 155
+)
+WHERE EmpSatisfaction >= 3)
+WHERE PerformanceScore = 'Exceeds' OR PerformanceScore = 'Fully Meets')
+WHERE Department ='IT/IS' OR Department = 'Production'
+```
+
+
+
