@@ -7,7 +7,7 @@ A small data analysis project, focused on analyzing employee data. This project 
 - [Project Overview](#project-overview)
 - [Data Sources](#data-sources)
 - [Tools](#tools)
-- [Task 1 and 2: Creating and extracting the specific dataset](task-1-and-2:-creating-and-extracting-the-specific-dataset)
+- [Task 1 and 2: Creating and extracting the specific dataset](task-1-and-2-:-creating-and-extracting-the-specific-dataset)
 
 ### Project Overview
 
