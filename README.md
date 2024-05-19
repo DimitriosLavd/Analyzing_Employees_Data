@@ -9,6 +9,9 @@ A small data analysis project, focused on analyzing employee data. This project 
 - [Tools](#tools)
 - [Task 1 and 2 - Creating and extracting the specific dataset](#task-1-and-2---creating-and-extracting-the-specific-dataset)
 - [Task 3 - Analyzing Salary Data](#task-3---analyzing-salary-data)
+- [Task 4 - Visual Analysis of Salary](#task 4---visual-analysis-of-salary)
+- [Task 5 - Visually representing Salary VS Employee Satisfaction](#task-5---visually-representing-salary-vs-employee-satisfaction)
+- [Task 6 - Pie Chart Representation of Race Distribution](#task-6---pie-chart-representation-of-race-distribution)
 
 ### Project Overview
 
@@ -567,7 +570,7 @@ After running the previous code, we extracetd the following results about the em
 2. Median Salary: 72460.0
 3. Salary Standard Deviation: 26551.30428235781
 
-### Task 4 - Visual Analysis of Salary:
+### Task 4 - Visual Analysis of Salary
 
 After extracting insights about the Salary, it was time to visualize them. We will use a histogram and a KDE.  This visualization will provide a clear view of the salary distribution within the company, offering valuable insights into the range and spread of earnings among employees. The code and the produced graph are the following: 
 
@@ -584,7 +587,7 @@ plt.title('Distribution of Salaries')
 
 ![image](https://github.com/DimitriosLavd/Analyzing_Employees_Data/assets/157892523/b0073d2d-cea0-4e9b-905c-96c12ea5e551)
 
-### Task 5 - Visually representing Salary VS Employee satisfaction
+### Task 5 - Visually representing Salary VS Employee Satisfaction
 
 At this point, we wanted to investigate the relationship between the Salary and Employee satisfaction. We did that by creating a scatter plot that depicts the relationship between 'Salary' and 'Employee Satisfaction', with each data point uniquely color-coded to represent an individual employee.
 
