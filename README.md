@@ -12,6 +12,7 @@ A small data analysis project, focused on analyzing employee data. This project 
 - [Task 4 - Visual Analysis of Salary](#task-4---visual-analysis-of-salary)
 - [Task 5 - Visually representing Salary VS Employee Satisfaction](#task-5---visually-representing-salary-vs-employee-satisfaction)
 - [Task 6 - Pie Chart Representation of Race Distribution](#task-6---pie-chart-representation-of-race-distribution)
+- [Refrences](#refrences)
 
 ### Project Overview
 
@@ -640,6 +641,16 @@ for text in fig_3:
 ```
 
 ![image](https://github.com/DimitriosLavd/Analyzing_Employees_Data/assets/157892523/11950dd1-7c01-4341-9fa1-49edec11e087)
+
+### Refrences 
+
+1. [Workearly Machine Learning & AI Bootcamp](https://academy.workearly.services/course/machine-learning-and-ai-bootcamp)
+2. [Python](https://www.python.org/)
+3. [Pandas](https://pandas.pydata.org/)
+4. [NymPy](https://numpy.org/)
+5. [Plotly](https://plotly.com/python/)
+6. [Seaborn](#https://seaborn.pydata.org/)
+
 
 
 
