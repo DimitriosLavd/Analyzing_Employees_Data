@@ -559,5 +559,28 @@ After running the previous code, we extracetd the following results about the em
 2. Median Salary: 72460.0
 3. Salary Standard Deviation: 26551.30428235781
 
+### Task 3: Visual Analysis of Salary:
+
+After extracting insights about the Salary, it was time to visualize them. We will use a histogram and a KDE.  This visualization will provide a clear view of the salary distribution within the company, offering valuable insights into the range and spread of earnings among employees. The code and the produced graph are the following: 
+
+```python
+"""Visual Analysis of Salary"""
+""" Create histogram and KDE"""
+# Plot the basic histogram with the KDE
+sns.histplot(df.Salary, bins=30, kde=True, color='darkblue', edgecolor='black')
+#Axis formating
+plt.xlabel('Salary')
+plt.ylabel('Count')
+plt.title('Distribution of Salaries')
+```
+
+![image](https://github.com/DimitriosLavd/Analyzing_Employees_Data/assets/157892523/b0073d2d-cea0-4e9b-905c-96c12ea5e551)
+
+
+
+
+
+
+
 
 
