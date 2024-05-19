@@ -576,6 +576,32 @@ plt.title('Distribution of Salaries')
 
 ![image](https://github.com/DimitriosLavd/Analyzing_Employees_Data/assets/157892523/b0073d2d-cea0-4e9b-905c-96c12ea5e551)
 
+### Task 4: Visually representing Salary VS Employee satisfaction
+
+At this point, we wanted to investigate the relationship between the Salary and Employee satisfaction. We did that by creating a scatter plot that depicts the relationship between 'Salary' and 'Employee Satisfaction', with each data point uniquely color-coded to represent an individual employee.
+
+Prior to plotting, each row in the DataFrame should be tagged with a distinct identifier. This ensures that each employee is uniquely represented when plotted. We did that with the following code chunk: 
+
+```python
+df['unique_id'] = range(1,110)
+```
+Then, we created the following plot: 
+
+```python
+""" Salary VS Employee Satisfaction"""
+""" Create a scatter plot"""
+fig_2 = px.scatter(df, x="Salary", y="EmpSatisfaction", color='unique_id', hover_data = ['Employee_Name'],
+                  labels = {'EmpSatisfaction':'EmpSatisfaction',
+                             'Salary':'Salary'},title = 'Salary vs. Employee Satisfaction')
+fig_2.show()
+```
+
+![image](https://github.com/DimitriosLavd/Analyzing_Employees_Data/assets/157892523/00983dcc-5356-471f-9dcf-155e0591c388)
+
+
+
+
+
 
 
 
