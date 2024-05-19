@@ -649,7 +649,7 @@ for text in fig_3:
 3. [Pandas](https://pandas.pydata.org/)
 4. [NymPy](https://numpy.org/)
 5. [Plotly](https://plotly.com/python/)
-6. [Seaborn](#https://seaborn.pydata.org/)
+6. [Seaborn](https://seaborn.pydata.org/)
 
 
 
