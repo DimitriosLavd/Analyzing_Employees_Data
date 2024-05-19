@@ -2,6 +2,10 @@
 
 A small data analysis project, focused on analyzing employee data. This project was assigned by the Workearly [Machine Learning and AI Bootcamp](https://academy.workearly.services/course/machine-learning-and-ai-bootcamp). 
 
+## Table of Contents 
+
+- [Project Overview](#project-overview)
+
 ### Project Overview
 
 We been given a dataset called employees.csv, encompassing information on several company employees. Our mission involves utilizing SQL for initial data refinement, followed by Python for detailed analysis and data visualization. Our main objectives are the following: 
