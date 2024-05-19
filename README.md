@@ -523,7 +523,41 @@ Median Salary 🎯:  The median salary, signifying the middle value when the s
 
 Salary Variability 🔍: The standard deviation of the 'Salary' column. This value showcases the amount of variation or dispersion from the mean.
 
+Firstly, we imported the Python libraries, we then used for our analysis:
 
+```python
+""" Import the necessary libraries"""
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt  
+import seaborn as sns
+import plotly.express as px 
+import matplotlib.ticker as tick
+```
+And then, we created a core dataframe by importing the dataset we previously produced: 
+
+```python
+""" import the dataset and create the core dataset"""
+df = pd.read_csv("D:\data analysis_2\Case Studies\Employee Data Analysis\sample.csv")
+```
+
+In order to extract the desired insights about the salary, we used the following code: 
+
+```python
+""" Salary Statistical Insights"""
+Mean_Salary = np.average(df.Salary)
+Median_Salary = np.median(df.Salary)
+Salary_Standard_Deviation = np.std(df.Salary)
+
+print(f"Mean Salary: {Mean_Salary}")
+print(f"Median Salary: {Median_Salary}")
+print(f"Salary Standard Deviation: {Salary_Standard_Deviation}")
+```
+After running the previous code, we extracetd the following results about the employees' salaries: 
+
+1. Mean Salary: 82448.26605504587
+2. Median Salary: 72460.0
+3. Salary Standard Deviation: 26551.30428235781
 
 
 
