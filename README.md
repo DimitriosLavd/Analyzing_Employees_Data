@@ -20,7 +20,7 @@ Our main data source is the employees.csv that was provided by the [Machine Lear
 - Big Query Sandbox (SQL) - Extracting specific subsets
 - Anaconda Navigator/Spyder (Python) - Data Analysis, Data Computations, Data Visualizations
 
-### Task 1: Extracting the specific dataset
+### Task 1 and 2 : Creating and extracting the specific dataset
 
 Our initial dataset contains information about 311 employees. You can see our initial dataset below: 
 
@@ -513,7 +513,7 @@ The final dataset is the following:
 |Billis, Helen            |10003|1        |1              |0       |1          |5     |4          |0                     |62910 |0    |19        |Production Technician I |MA   |2031 |F  |Married    |US Citizen         |false         |White                           |N/A-StillEmployed               |Active                |Production|Brannon Miller  |12       |Indeed            |Exceeds         |5.0             |3              |0                   |0             |19      |
 
 
-### Task 2: Analyzing Salary Data
+### Task 3: Analyzing Salary Data
 
 At this point, we had produced the final dataset, and we stored as 'sample.csv'. As our next step, we used python to extract some statistical insights about the 'Salary' information of our data set. More accurately, we wanted to calculate the following: 
 
@@ -559,7 +559,7 @@ After running the previous code, we extracetd the following results about the em
 2. Median Salary: 72460.0
 3. Salary Standard Deviation: 26551.30428235781
 
-### Task 3: Visual Analysis of Salary:
+### Task 4: Visual Analysis of Salary:
 
 After extracting insights about the Salary, it was time to visualize them. We will use a histogram and a KDE.  This visualization will provide a clear view of the salary distribution within the company, offering valuable insights into the range and spread of earnings among employees. The code and the produced graph are the following: 
 
@@ -576,7 +576,7 @@ plt.title('Distribution of Salaries')
 
 ![image](https://github.com/DimitriosLavd/Analyzing_Employees_Data/assets/157892523/b0073d2d-cea0-4e9b-905c-96c12ea5e551)
 
-### Task 4: Visually representing Salary VS Employee satisfaction
+### Task 5: Visually representing Salary VS Employee satisfaction
 
 At this point, we wanted to investigate the relationship between the Salary and Employee satisfaction. We did that by creating a scatter plot that depicts the relationship between 'Salary' and 'Employee Satisfaction', with each data point uniquely color-coded to represent an individual employee.
 
@@ -597,6 +597,49 @@ fig_2.show()
 ```
 
 ![image](https://github.com/DimitriosLavd/Analyzing_Employees_Data/assets/157892523/00983dcc-5356-471f-9dcf-155e0591c388)
+
+### Task 6: Pie Chart Representation of Race Distribution
+
+Finally, we wanted to craft a pie chart that vividly illustrates the distribution of different races within a given dataset. First of all, we calculated the percent of the employees that represent each race. We used the following code: 
+
+```python
+#We find and store the data for the race distribution
+race_dist = df.groupby(['RaceDesc'])['RaceDesc'].count().reset_index(name="count")
+race_dist['percentage'] = (race_dist['count']/109)*100
+race_dist = race_dist.sort_values('percentage')
+```
+
+We used the race_dist DataFrame in the following code in order to create the Pie Chart we wanted:
+
+```python
+# Creating plot
+fig_3 = plt.figure(figsize=(10, 7))
+fig_3 = plt.pie(race_dist.percentage, labels=race_dist.RaceDesc,colors=sns.color_palette('Pastel1'), 
+        autopct='%1.2f%%',startangle=140)
+# Add Title 
+fig_3 = plt.title(
+    label="Distibrution of Races", 
+    fontdict={"fontsize":16},
+    pad=20
+)
+
+for text in fig_3:
+    text.set_fontweight('bold')
+    text.set_horizontalalignment('center')
+```
+
+![image](https://github.com/DimitriosLavd/Analyzing_Employees_Data/assets/157892523/11950dd1-7c01-4341-9fa1-49edec11e087)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
