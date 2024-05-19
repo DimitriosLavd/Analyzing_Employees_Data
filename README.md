@@ -8,6 +8,7 @@ A small data analysis project, focused on analyzing employee data. This project 
 - [Data Sources](#data-sources)
 - [Tools](#tools)
 - [Task 1 and 2 - Creating and extracting the specific dataset](#task-1-and-2---creating-and-extracting-the-specific-dataset)
+- [Task 3 - Analyzing Salary Data](#task-3---analyzing-salary-data)
 
 ### Project Overview
 
@@ -520,7 +521,7 @@ The final dataset is the following:
 |Billis, Helen            |10003|1        |1              |0       |1          |5     |4          |0                     |62910 |0    |19        |Production Technician I |MA   |2031 |F  |Married    |US Citizen         |false         |White                           |N/A-StillEmployed               |Active                |Production|Brannon Miller  |12       |Indeed            |Exceeds         |5.0             |3              |0                   |0             |19      |
 
 
-### Task 3: Analyzing Salary Data
+### Task 3 - Analyzing Salary Data
 
 At this point, we had produced the final dataset, and we stored as 'sample.csv'. As our next step, we used python to extract some statistical insights about the 'Salary' information of our data set. More accurately, we wanted to calculate the following: 
 
@@ -566,7 +567,7 @@ After running the previous code, we extracetd the following results about the em
 2. Median Salary: 72460.0
 3. Salary Standard Deviation: 26551.30428235781
 
-### Task 4: Visual Analysis of Salary:
+### Task 4 - Visual Analysis of Salary:
 
 After extracting insights about the Salary, it was time to visualize them. We will use a histogram and a KDE.  This visualization will provide a clear view of the salary distribution within the company, offering valuable insights into the range and spread of earnings among employees. The code and the produced graph are the following: 
 
@@ -583,7 +584,7 @@ plt.title('Distribution of Salaries')
 
 ![image](https://github.com/DimitriosLavd/Analyzing_Employees_Data/assets/157892523/b0073d2d-cea0-4e9b-905c-96c12ea5e551)
 
-### Task 5: Visually representing Salary VS Employee satisfaction
+### Task 5 - Visually representing Salary VS Employee satisfaction
 
 At this point, we wanted to investigate the relationship between the Salary and Employee satisfaction. We did that by creating a scatter plot that depicts the relationship between 'Salary' and 'Employee Satisfaction', with each data point uniquely color-coded to represent an individual employee.
 
@@ -605,7 +606,7 @@ fig_2.show()
 
 ![image](https://github.com/DimitriosLavd/Analyzing_Employees_Data/assets/157892523/00983dcc-5356-471f-9dcf-155e0591c388)
 
-### Task 6: Pie Chart Representation of Race Distribution
+### Task 6 - Pie Chart Representation of Race Distribution
 
 Finally, we wanted to craft a pie chart that vividly illustrates the distribution of different races within a given dataset. First of all, we calculated the percent of the employees that represent each race. We used the following code: 
 
