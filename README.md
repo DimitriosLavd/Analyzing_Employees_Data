@@ -7,7 +7,7 @@ A small data analysis project, focused on analyzing employee data. This project 
 - [Project Overview](#project-overview)
 - [Data Sources](#data-sources)
 - [Tools](#tools)
-- [Task 1 and 2: Creating and extracting the specific dataset](task-1-and-2-:-creating-and-extracting-the-specific-dataset)
+- [Task 1 and 2: Creating and extracting the specific dataset](task-1-and-2---creating-and-extracting-the-specific-dataset)
 
 ### Project Overview
 
@@ -27,7 +27,7 @@ Our main data source is the employees.csv that was provided by the [Machine Lear
 - Big Query Sandbox (SQL) - Extracting specific subsets
 - Anaconda Navigator/Spyder (Python) - Data Analysis, Data Computations, Data Visualizations
 
-### Task 1 and 2: Creating and extracting the specific dataset
+### Task 1 and 2 - Creating and extracting the specific dataset
 
 Our initial dataset contains information about 311 employees. You can see our initial dataset below: 
 
