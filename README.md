@@ -1,4 +1,4 @@
-# Analyzing_Employee's_Data
+# Analyzing_Employee's_Data(SQL-PYTHON)
 
 A small data analysis project, focused on analyzing employee data. This project was assigned by the Workearly [Machine Learning and AI Bootcamp](https://academy.workearly.services/course/machine-learning-and-ai-bootcamp). 
 
